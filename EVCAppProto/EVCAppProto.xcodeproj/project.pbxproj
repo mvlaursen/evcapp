@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B5B99F62144520500F6D368 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B5B99F52144520500F6D368 /* WebKit.framework */; };
 		3BDFAF44214348A900143AF2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BDFAF43214348A900143AF2 /* AppDelegate.m */; };
 		3BDFAF47214348A900143AF2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BDFAF46214348A900143AF2 /* ViewController.m */; };
 		3BDFAF4A214348A900143AF2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BDFAF48214348A900143AF2 /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3B5B99F52144520500F6D368 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		3BDFAF3F214348A900143AF2 /* EVCAppProto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EVCAppProto.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BDFAF42214348A900143AF2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3BDFAF43214348A900143AF2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -33,17 +35,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B5B99F62144520500F6D368 /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3B5B99F42144520500F6D368 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3B5B99F52144520500F6D368 /* WebKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		3BDFAF36214348A900143AF2 = {
 			isa = PBXGroup;
 			children = (
 				3BDFAF41214348A900143AF2 /* EVCAppProto */,
 				3BDFAF40214348A900143AF2 /* Products */,
+				3B5B99F42144520500F6D368 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
