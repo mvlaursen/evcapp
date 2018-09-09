@@ -10,8 +10,13 @@
 
 @implementation DocumentCollection
 
+static NSArray *_documents = nil;
+
 + (NSArray *)documents {
-    return [NSArray arrayWithObjects:[[Document alloc] init], [[Document alloc] init], [[Document alloc] init], nil];
+    if (_documents == nil) {
+        _documents = [NSArray arrayWithObjects:[[Document alloc] init], [[Document alloc] init], [[Document alloc] init], nil];
+    }
+    return _documents;
 }
 
 @end
