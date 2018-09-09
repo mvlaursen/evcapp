@@ -9,11 +9,6 @@
 #import "ViewController.h"
 
 @interface ViewController ()
-{
-// TODO: Do we really need an instance variable?
-@private
-UIDocumentInteractionController *docInteractionController;
-}
 @end
 
 @implementation ViewController
@@ -28,7 +23,7 @@ UIDocumentInteractionController *docInteractionController;
 }
 
 - (IBAction)openSampleDocument:(UIButton *)sender {
-    docInteractionController = [[UIDocumentInteractionController alloc] init];
+    UIDocumentInteractionController *docInteractionController = [[UIDocumentInteractionController alloc] init];
     NSURL *url = [[NSBundle mainBundle] URLForResource:@"97Eurovan" withExtension:@"pdf"];
     docInteractionController = [UIDocumentInteractionController interactionControllerWithURL:url];
     docInteractionController.delegate = self;
