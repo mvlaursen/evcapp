@@ -7,6 +7,7 @@
 //
 
 #import "DocumentCollection.h"
+#import "TableViewCell.h"
 #import "TableViewController.h"
 
 @interface TableViewController ()
@@ -43,10 +44,10 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Document Cell" forIndexPath:indexPath];
-    
-    // Configure the cell...
-    
+    TableViewCell *cell = (TableViewCell *) [tableView dequeueReusableCellWithIdentifier:@"Document Cell" forIndexPath:indexPath];
+    NSArray *documents = [DocumentCollection documents];
+    Document *document = (Document *) [documents objectAtIndex:indexPath.row];
+    cell.documentName.text = document.name;
     return cell;
 }
 
@@ -98,7 +99,7 @@
     UIDocumentInteractionController *docInteractionController = [[UIDocumentInteractionController alloc] init];
     // TODO: Use the actual document for the row selected.
     NSArray *documents = [DocumentCollection documents];
-    NSURL *url = [[documents objectAtIndex:0] url];
+    NSURL *url = [[documents objectAtIndex:indexPath.row] url];
     docInteractionController = [UIDocumentInteractionController interactionControllerWithURL:url];
     docInteractionController.delegate = self;
     [docInteractionController presentPreviewAnimated:YES];
