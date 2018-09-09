@@ -10,12 +10,23 @@
 
 @implementation Document
 
+NSString *_name = nil;
+NSURL *_url = nil;
+
 - (NSString *)name {
-    return @"EuroVan 1997";
+    return _name;
 }
 
 - (NSURL *)url {
-    return [[NSBundle mainBundle] URLForResource:@"97Eurovan" withExtension:@"pdf"];
+    return _url;
+}
+
+-(instancetype)init:(NSString *)name withURL:(NSURL *)url {
+    if (self = [super init]) {
+        _name = name;
+        _url = url;
+    }
+    return self;
 }
 
 @end

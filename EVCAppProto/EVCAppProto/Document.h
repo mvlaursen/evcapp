@@ -9,6 +9,10 @@
 #import <Foundation/Foundation.h>
 
 @interface Document: NSObject
+
 @property (readonly) NSString *title;
 @property (readonly) NSURL *url;
+
+-(instancetype)init:(NSString *)name withURL:(NSURL *)url;
+
 @end
