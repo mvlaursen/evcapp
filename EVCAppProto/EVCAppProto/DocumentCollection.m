@@ -17,10 +17,12 @@ static NSArray *_documents = nil;
     if (_documents == nil) {
         _documents = [[NSArray alloc] init];
         
-        NSURL *url = [[NSBundle mainBundle] URLForResource:@"97Eurovan" withExtension:@"pdf"];
-        _documents = [_documents arrayByAddingObject:[[Document alloc] init:@"EuroVan 1997" withURL:url]];
-        _documents = [_documents arrayByAddingObject:[[Document alloc] init:@"EuroVan 1998" withURL:url]];
-        _documents = [_documents arrayByAddingObject:[[Document alloc] init:@"EuroVan 1999" withURL:url]];        
+        NSURL *url = [[NSBundle mainBundle] URLForResource:@"95EuroVanCanadian" withExtension:@"pdf"];
+        _documents = [_documents arrayByAddingObject:[[Document alloc] init:@"1995 EuroVan Camper (Canadian)" withURL:url]];
+        url = [[NSBundle mainBundle] URLForResource:@"97Eurovan" withExtension:@"pdf"];
+        _documents = [_documents arrayByAddingObject:[[Document alloc] init:@"1997 EuroVan Camper" withURL:url]];
+        url = [[NSBundle mainBundle] URLForResource:@"02Eurovan" withExtension:@"pdf"];
+        _documents = [_documents arrayByAddingObject:[[Document alloc] init:@"2002 EuroVan Camper" withURL:url]];
     }
     return _documents;
 }
