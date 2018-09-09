@@ -45,8 +45,7 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     TableViewCell *cell = (TableViewCell *) [tableView dequeueReusableCellWithIdentifier:@"Document Cell" forIndexPath:indexPath];
-    NSArray *documents = [DocumentCollection documents];
-    Document *document = (Document *) [documents objectAtIndex:indexPath.row];
+    Document *document = (Document *) [[DocumentCollection documents] objectAtIndex:indexPath.row];
     cell.documentName.text = document.name;
     return cell;
 }

@@ -8,10 +8,10 @@
 
 #import "Document.h"
 
-@implementation Document
-
-NSString *_name = nil;
-NSURL *_url = nil;
+@implementation Document {
+    NSString *_name;
+    NSURL *_url;
+}
 
 - (NSString *)name {
     return _name;
