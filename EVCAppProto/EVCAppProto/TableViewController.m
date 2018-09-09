@@ -97,9 +97,8 @@
 - (void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     UIDocumentInteractionController *docInteractionController = [[UIDocumentInteractionController alloc] init];
     // TODO: Use the actual document for the row selected.
-    NSArray *documents = [DocumentCollection documents];
-    NSURL *url = [[documents objectAtIndex:indexPath.row] url];
-    docInteractionController = [UIDocumentInteractionController interactionControllerWithURL:url];
+    Document *document = [[DocumentCollection documents] objectAtIndex:indexPath.row];
+    docInteractionController = [UIDocumentInteractionController interactionControllerWithURL:document.url];
     docInteractionController.delegate = self;
     [docInteractionController presentPreviewAnimated:YES];
 }
