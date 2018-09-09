@@ -11,7 +11,7 @@
 @implementation DocumentCollection
 
 + (NSArray *)documents {
-    return [NSArray arrayWithObjects:@"EuroVan 1", @"EuroVan 2", @"EuroVan 3", nil];
+    return [NSArray arrayWithObjects:[[Document alloc] init], [[Document alloc] init], [[Document alloc] init], nil];
 }
 
 @end

@@ -6,7 +6,7 @@
 //  Copyright © 2018 Appamajigger. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import "Document.h"
 
 @interface DocumentCollection: NSObject
 

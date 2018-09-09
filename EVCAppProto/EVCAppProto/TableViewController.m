@@ -96,7 +96,9 @@
 
 - (void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     UIDocumentInteractionController *docInteractionController = [[UIDocumentInteractionController alloc] init];
-    NSURL *url = [[NSBundle mainBundle] URLForResource:@"97Eurovan" withExtension:@"pdf"];
+    // TODO: Use the actual document for the row selected.
+    NSArray *documents = [DocumentCollection documents];
+    NSURL *url = [[documents objectAtIndex:0] url];
     docInteractionController = [UIDocumentInteractionController interactionControllerWithURL:url];
     docInteractionController.delegate = self;
     [docInteractionController presentPreviewAnimated:YES];
