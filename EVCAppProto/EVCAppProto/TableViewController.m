@@ -6,6 +6,7 @@
 //  Copyright © 2018 Appamajigger. All rights reserved.
 //
 
+#import "DocumentCollection.h"
 #import "TableViewController.h"
 
 @interface TableViewController ()
@@ -36,8 +37,9 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    NSArray *documents = [DocumentCollection documents];
     // TODO: Give the real number.
-    return 1;
+    return documents.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {

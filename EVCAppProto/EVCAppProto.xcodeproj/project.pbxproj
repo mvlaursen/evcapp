@@ -10,6 +10,7 @@
 		3BC1497221448DF00091C30F /* 97Eurovan.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 3BC1497121448DF00091C30F /* 97Eurovan.pdf */; };
 		3BDD198F2144D0A3009E744A /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BDD198E2144D0A3009E744A /* TableViewController.m */; };
 		3BDD19922144D104009E744A /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BDD19912144D104009E744A /* TableViewCell.m */; };
+		3BDD19942144D854009E744A /* DocumentCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BDD19932144D854009E744A /* DocumentCollection.m */; };
 		3BDFAF44214348A900143AF2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BDFAF43214348A900143AF2 /* AppDelegate.m */; };
 		3BDFAF4A214348A900143AF2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BDFAF48214348A900143AF2 /* Main.storyboard */; };
 		3BDFAF4C214348AA00143AF2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BDFAF4B214348AA00143AF2 /* Assets.xcassets */; };
@@ -24,6 +25,8 @@
 		3BDD198E2144D0A3009E744A /* TableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
 		3BDD19902144D104009E744A /* TableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewCell.h; sourceTree = "<group>"; };
 		3BDD19912144D104009E744A /* TableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewCell.m; sourceTree = "<group>"; };
+		3BDD19932144D854009E744A /* DocumentCollection.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DocumentCollection.m; sourceTree = "<group>"; };
+		3BDD19952144D87C009E744A /* DocumentCollection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DocumentCollection.h; sourceTree = "<group>"; };
 		3BDFAF3F214348A900143AF2 /* EVCAppProto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EVCAppProto.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BDFAF42214348A900143AF2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3BDFAF43214348A900143AF2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -75,6 +78,8 @@
 			children = (
 				3BDFAF42214348A900143AF2 /* AppDelegate.h */,
 				3BDFAF43214348A900143AF2 /* AppDelegate.m */,
+				3BDD19952144D87C009E744A /* DocumentCollection.h */,
+				3BDD19932144D854009E744A /* DocumentCollection.m */,
 				3BDD198D2144D0A3009E744A /* TableViewController.h */,
 				3BDD198E2144D0A3009E744A /* TableViewController.m */,
 				3BDD19902144D104009E744A /* TableViewCell.h */,
@@ -162,6 +167,7 @@
 			files = (
 				3BDFAF52214348AA00143AF2 /* main.m in Sources */,
 				3BDFAF44214348A900143AF2 /* AppDelegate.m in Sources */,
+				3BDD19942144D854009E744A /* DocumentCollection.m in Sources */,
 				3BDD19922144D104009E744A /* TableViewCell.m in Sources */,
 				3BDD198F2144D0A3009E744A /* TableViewController.m in Sources */,
 			);
