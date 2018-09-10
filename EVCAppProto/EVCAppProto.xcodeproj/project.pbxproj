@@ -7,9 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3B0F1F0D2145E24F00F5B915 /* 02Eurovan.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 3B0F1F0C2145E24F00F5B915 /* 02Eurovan.pdf */; };
-		3B0F1F0F2145E2BC00F5B915 /* 95EuroVanCanadian.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 3B0F1F0E2145E2BC00F5B915 /* 95EuroVanCanadian.pdf */; };
-		3BC1497221448DF00091C30F /* 97Eurovan.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 3BC1497121448DF00091C30F /* 97Eurovan.pdf */; };
 		3BDD198F2144D0A3009E744A /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BDD198E2144D0A3009E744A /* TableViewController.m */; };
 		3BDD19922144D104009E744A /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BDD19912144D104009E744A /* TableViewCell.m */; };
 		3BDD19942144D854009E744A /* DocumentCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BDD19932144D854009E744A /* DocumentCollection.m */; };
@@ -22,10 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3B0F1F0C2145E24F00F5B915 /* 02Eurovan.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 02Eurovan.pdf; sourceTree = "<group>"; };
-		3B0F1F0E2145E2BC00F5B915 /* 95EuroVanCanadian.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 95EuroVanCanadian.pdf; sourceTree = "<group>"; };
 		3B5B99F52144520500F6D368 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
-		3BC1497121448DF00091C30F /* 97Eurovan.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 97Eurovan.pdf; sourceTree = "<group>"; };
 		3BDD198D2144D0A3009E744A /* TableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
 		3BDD198E2144D0A3009E744A /* TableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
 		3BDD19902144D104009E744A /* TableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewCell.h; sourceTree = "<group>"; };
@@ -98,9 +92,6 @@
 				3BDFAF4D214348AA00143AF2 /* LaunchScreen.storyboard */,
 				3BDFAF50214348AA00143AF2 /* Info.plist */,
 				3BDFAF51214348AA00143AF2 /* main.m */,
-				3B0F1F0E2145E2BC00F5B915 /* 95EuroVanCanadian.pdf */,
-				3BC1497121448DF00091C30F /* 97Eurovan.pdf */,
-				3B0F1F0C2145E24F00F5B915 /* 02Eurovan.pdf */,
 			);
 			path = EVCAppProto;
 			sourceTree = "<group>";
@@ -162,10 +153,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3B0F1F0F2145E2BC00F5B915 /* 95EuroVanCanadian.pdf in Resources */,
-				3B0F1F0D2145E24F00F5B915 /* 02Eurovan.pdf in Resources */,
 				3BDFAF4F214348AA00143AF2 /* LaunchScreen.storyboard in Resources */,
-				3BC1497221448DF00091C30F /* 97Eurovan.pdf in Resources */,
 				3BDFAF4C214348AA00143AF2 /* Assets.xcassets in Resources */,
 				3BDFAF4A214348A900143AF2 /* Main.storyboard in Resources */,
 			);
