@@ -10,6 +10,8 @@
 #import "TableViewCell.h"
 #import "TableViewController.h"
 
+@import SafariServices;
+
 @interface TableViewController ()
 
 @end
@@ -95,17 +97,9 @@
 */
 
 - (void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    UIDocumentInteractionController *docInteractionController = [[UIDocumentInteractionController alloc] init];
-    // TODO: Use the actual document for the row selected.
     Document *document = [[DocumentCollection documents] objectAtIndex:indexPath.row];
-    docInteractionController = [UIDocumentInteractionController interactionControllerWithURL:document.url];
-    docInteractionController.delegate = self;
-    [docInteractionController presentPreviewAnimated:YES];
+    SFSafariViewController *svc = [[SFSafariViewController alloc] initWithURL:document.url];
+    [self presentViewController:svc animated:YES completion:nil];
 }
 
-// MARK: - UIDocumentInteractionControllerDelegate
-
-- (UIViewController *)documentInteractionControllerViewControllerForPreview:(UIDocumentInteractionController *)controller {
-    return self;
-}
 @end

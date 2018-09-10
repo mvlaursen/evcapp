@@ -17,11 +17,11 @@ static NSArray *_documents = nil;
     if (_documents == nil) {
         _documents = [[NSArray alloc] init];
         
-        NSURL *url = [[NSBundle mainBundle] URLForResource:@"95EuroVanCanadian" withExtension:@"pdf"];
+        NSURL *url = [NSURL URLWithString:@"https://winnebagoind.com/resources/manuals/pdfs/Operator1995/95EuroVanCanadian.pdf"];
         _documents = [_documents arrayByAddingObject:[[Document alloc] init:@"1995 EuroVan Camper (Canadian)" withURL:url]];
-        url = [[NSBundle mainBundle] URLForResource:@"97Eurovan" withExtension:@"pdf"];
+        url = [NSURL URLWithString:@"https://winnebagoind.com/resources/manuals/pdfs/Operator1997/97Eurovan.pdf"];
         _documents = [_documents arrayByAddingObject:[[Document alloc] init:@"1997 EuroVan Camper" withURL:url]];
-        url = [[NSBundle mainBundle] URLForResource:@"02Eurovan" withExtension:@"pdf"];
+        url = [NSURL URLWithString:@"https://winnebagoind.com/resources/manuals/pdfs/Operator2002/02Eurovan.pdf"];
         _documents = [_documents arrayByAddingObject:[[Document alloc] init:@"2002 EuroVan Camper" withURL:url]];
     }
     return _documents;

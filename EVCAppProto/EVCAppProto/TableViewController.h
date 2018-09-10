@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface TableViewController : UITableViewController <UIDocumentInteractionControllerDelegate>
+@interface TableViewController : UITableViewController
 
 @end
