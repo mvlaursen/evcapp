@@ -21,7 +21,7 @@
     return _url;
 }
 
--(instancetype)init:(NSString *)name withURL:(NSURL *)url {
+- (instancetype)init:(NSString *)name withURL:(NSURL *)url {
     if (self = [super init]) {
         _name = name;
         _url = url;

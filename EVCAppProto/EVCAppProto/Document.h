@@ -13,6 +13,6 @@
 @property (readonly) NSString *name;
 @property (readonly) NSURL *url;
 
--(instancetype)init:(NSString *)name withURL:(NSURL *)url;
+- (instancetype)init:(NSString *)name withURL:(NSURL *)url;
 
 @end
