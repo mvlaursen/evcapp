@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B7A2F9821546A0D004C0A78 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B7A2F9721546A0D004C0A78 /* StoreKit.framework */; };
 		3BCBBDC62148C8CB00B80FBA /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3BCBBDC82148C8CB00B80FBA /* Localizable.strings */; };
 		3BDD198F2144D0A3009E744A /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BDD198E2144D0A3009E744A /* TableViewController.m */; };
 		3BDD19922144D104009E744A /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BDD19912144D104009E744A /* TableViewCell.m */; };
@@ -21,6 +22,7 @@
 
 /* Begin PBXFileReference section */
 		3B5B99F52144520500F6D368 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		3B7A2F9721546A0D004C0A78 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		3BCBBDC72148C8CB00B80FBA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		3BCBBDCA2148CB1700B80FBA /* fr-CA */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "fr-CA"; path = "fr-CA.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		3BDD198D2144D0A3009E744A /* TableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
@@ -46,6 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B7A2F9821546A0D004C0A78 /* StoreKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -55,6 +58,7 @@
 		3B5B99F42144520500F6D368 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3B7A2F9721546A0D004C0A78 /* StoreKit.framework */,
 				3B5B99F52144520500F6D368 /* WebKit.framework */,
 			);
 			name = Frameworks;

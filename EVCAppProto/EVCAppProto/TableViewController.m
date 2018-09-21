@@ -7,6 +7,7 @@
 //
 
 #import "DocumentCollection.h"
+#import <StoreKit/StoreKit.h>
 #import "TableViewCell.h"
 #import "TableViewController.h"
 
@@ -18,6 +19,8 @@
 
 @implementation TableViewController
 
+static NSString *const kNumDocumentsReadKey = @"NumDocumentsRead";
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
@@ -26,6 +29,12 @@
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    NSInteger numDocumentsRead = [defaults integerForKey:kNumDocumentsReadKey];
+    if (numDocumentsRead >= 10) {
+        [SKStoreReviewController requestReview];
+    }
 }
 
 - (void)didReceiveMemoryWarning {
@@ -99,7 +108,12 @@
 - (void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     Document *document = [[DocumentCollection documents] objectAtIndex:indexPath.row];
     SFSafariViewController *svc = [[SFSafariViewController alloc] initWithURL:document.url];
-    [self presentViewController:svc animated:YES completion:nil];
+    [self presentViewController:svc animated:YES completion:^{
+        NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+        NSInteger numDocumentsRead = [defaults integerForKey:kNumDocumentsReadKey];
+        numDocumentsRead++;
+        [defaults setInteger:numDocumentsRead forKey:kNumDocumentsReadKey];
+    }];
 }
 
 @end
