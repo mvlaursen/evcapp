@@ -69,16 +69,9 @@ static NSString *const kNumDocumentsReadKey = @"NumDocumentsRead";
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     TableViewCell *cell = (TableViewCell *) [tableView dequeueReusableCellWithIdentifier:@"Document Cell" forIndexPath:indexPath];
-    
-    if (indexPath.section == 0) {
-        Document *manual = (Document *) [[DocumentCollection manuals] objectAtIndex:indexPath.row];
-        cell.documentName.text = manual.name;
-        return cell;
-    } else {
-        Document *site = (Document *) [[DocumentCollection sites] objectAtIndex:indexPath.row];
-        cell.documentName.text = site.name;
-        return cell;
-    }
+    Document *document = (indexPath.section == 0) ? (Document *) [[DocumentCollection manuals] objectAtIndex:indexPath.row] : (Document *) [[DocumentCollection sites] objectAtIndex:indexPath.row];
+    cell.documentName.text = document.name;
+    return cell;
 }
 
 /*
@@ -126,25 +119,15 @@ static NSString *const kNumDocumentsReadKey = @"NumDocumentsRead";
 */
 
 - (void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (indexPath.section == 0) {
-        Document *manual = [[DocumentCollection manuals] objectAtIndex:indexPath.row];
-        SFSafariViewController *svc = [[SFSafariViewController alloc] initWithURL:manual.url];
-        [self presentViewController:svc animated:YES completion:^{
-            NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-            NSInteger numDocumentsRead = [defaults integerForKey:kNumDocumentsReadKey];
-            numDocumentsRead++;
-            [defaults setInteger:numDocumentsRead forKey:kNumDocumentsReadKey];
-        }];
-    } else {
-        Document *site = [[DocumentCollection sites] objectAtIndex:indexPath.row];
-        SFSafariViewController *svc = [[SFSafariViewController alloc] initWithURL:site.url];
-        [self presentViewController:svc animated:YES completion:^{
-            NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-            NSInteger numDocumentsRead = [defaults integerForKey:kNumDocumentsReadKey];
-            numDocumentsRead++;
-            [defaults setInteger:numDocumentsRead forKey:kNumDocumentsReadKey];
-        }];
-    }
+    Document *document = (indexPath.section == 0) ? [[DocumentCollection manuals] objectAtIndex:indexPath.row] : [[DocumentCollection sites] objectAtIndex:indexPath.row];
+
+    SFSafariViewController *svc = [[SFSafariViewController alloc] initWithURL:document.url];
+    [self presentViewController:svc animated:YES completion:^{
+        NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+        NSInteger numDocumentsRead = [defaults integerForKey:kNumDocumentsReadKey];
+        numDocumentsRead++;
+        [defaults setInteger:numDocumentsRead forKey:kNumDocumentsReadKey];
+    }];
 }
 
 @end
