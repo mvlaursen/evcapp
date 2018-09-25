@@ -14,9 +14,21 @@
 
 @implementation AppDelegate
 
+// TODO: This should be defined only once in the codebase.
+static NSString *const kNumDocumentsReadKey = @"NumDocumentsRead";
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    NSArray *args = [[NSProcessInfo processInfo] arguments];
+    NSArray *argsFiltered = [args filteredArrayUsingPredicate:[NSPredicate predicateWithBlock:^BOOL(id  _Nullable evaluatedObject, NSDictionary<NSString *,id> * _Nullable bindings) {
+        return [@"isTestMode" isEqualToString:(NSString *)evaluatedObject];
+    }]];
+    BOOL isTestMode = argsFiltered.count > 0;
+    
+    if (isTestMode) {
+        NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+        [defaults setInteger:0 forKey:kNumDocumentsReadKey];
+    }
+
     return YES;
 }
 

@@ -30,17 +30,10 @@ static NSString *const kNumDocumentsReadKey = @"NumDocumentsRead";
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
     
-    NSArray *args = [[NSProcessInfo processInfo] arguments];
-    NSArray *argsFiltered = [args filteredArrayUsingPredicate:[NSPredicate predicateWithBlock:^BOOL(id  _Nullable evaluatedObject, NSDictionary<NSString *,id> * _Nullable bindings) {
-        return [@"isTestMode" isEqualToString:(NSString *)evaluatedObject];
-    }]];
-    BOOL isTestMode = argsFiltered.count > 0;
-    if (!isTestMode) {
-        NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-        NSInteger numDocumentsRead = [defaults integerForKey:kNumDocumentsReadKey];
-        if (numDocumentsRead >= 10) {
-            [SKStoreReviewController requestReview];
-        }
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    NSInteger numDocumentsRead = [defaults integerForKey:kNumDocumentsReadKey];
+    if (numDocumentsRead >= 10) {
+        [SKStoreReviewController requestReview];
     }
 }
 
