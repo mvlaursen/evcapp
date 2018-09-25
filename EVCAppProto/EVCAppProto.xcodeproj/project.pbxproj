@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3B0CD147215ADA4900AFEB03 /* EVCAppProtoUnitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B0CD146215ADA4900AFEB03 /* EVCAppProtoUnitTests.m */; };
+		3B0CD155215ADC0E00AFEB03 /* EVCAppProtoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0CD154215ADC0E00AFEB03 /* EVCAppProtoUITests.swift */; };
 		3B7A2F9821546A0D004C0A78 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B7A2F9721546A0D004C0A78 /* StoreKit.framework */; };
 		3BCBBDC62148C8CB00B80FBA /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3BCBBDC82148C8CB00B80FBA /* Localizable.strings */; };
 		3BDD198F2144D0A3009E744A /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BDD198E2144D0A3009E744A /* TableViewController.m */; };
@@ -29,12 +30,22 @@
 			remoteGlobalIDString = 3BDFAF3E214348A900143AF2;
 			remoteInfo = EVCAppProto;
 		};
+		3B0CD157215ADC0E00AFEB03 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3BDFAF37214348A900143AF2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3BDFAF3E214348A900143AF2;
+			remoteInfo = EVCAppProto;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		3B0CD144215ADA4900AFEB03 /* EVCAppProtoUnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EVCAppProtoUnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B0CD146215ADA4900AFEB03 /* EVCAppProtoUnitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EVCAppProtoUnitTests.m; sourceTree = "<group>"; };
 		3B0CD148215ADA4900AFEB03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B0CD152215ADC0E00AFEB03 /* EVCAppProtoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EVCAppProtoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B0CD154215ADC0E00AFEB03 /* EVCAppProtoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EVCAppProtoUITests.swift; sourceTree = "<group>"; };
+		3B0CD156215ADC0E00AFEB03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3B5B99F52144520500F6D368 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		3B7A2F9721546A0D004C0A78 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		3BCBBDC72148C8CB00B80FBA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -65,6 +76,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3B0CD14F215ADC0E00AFEB03 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3BDFAF3C214348A900143AF2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -85,6 +103,15 @@
 			path = EVCAppProtoUnitTests;
 			sourceTree = "<group>";
 		};
+		3B0CD153215ADC0E00AFEB03 /* EVCAppProtoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3B0CD154215ADC0E00AFEB03 /* EVCAppProtoUITests.swift */,
+				3B0CD156215ADC0E00AFEB03 /* Info.plist */,
+			);
+			path = EVCAppProtoUITests;
+			sourceTree = "<group>";
+		};
 		3B5B99F42144520500F6D368 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -99,6 +126,7 @@
 			children = (
 				3BDFAF41214348A900143AF2 /* EVCAppProto */,
 				3B0CD145215ADA4900AFEB03 /* EVCAppProtoUnitTests */,
+				3B0CD153215ADC0E00AFEB03 /* EVCAppProtoUITests */,
 				3BDFAF40214348A900143AF2 /* Products */,
 				3B5B99F42144520500F6D368 /* Frameworks */,
 			);
@@ -109,6 +137,7 @@
 			children = (
 				3BDFAF3F214348A900143AF2 /* EVCAppProto.app */,
 				3B0CD144215ADA4900AFEB03 /* EVCAppProtoUnitTests.xctest */,
+				3B0CD152215ADC0E00AFEB03 /* EVCAppProtoUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -157,6 +186,24 @@
 			productReference = 3B0CD144215ADA4900AFEB03 /* EVCAppProtoUnitTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		3B0CD151215ADC0E00AFEB03 /* EVCAppProtoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3B0CD159215ADC0E00AFEB03 /* Build configuration list for PBXNativeTarget "EVCAppProtoUITests" */;
+			buildPhases = (
+				3B0CD14E215ADC0E00AFEB03 /* Sources */,
+				3B0CD14F215ADC0E00AFEB03 /* Frameworks */,
+				3B0CD150215ADC0E00AFEB03 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3B0CD158215ADC0E00AFEB03 /* PBXTargetDependency */,
+			);
+			name = EVCAppProtoUITests;
+			productName = EVCAppProtoUITests;
+			productReference = 3B0CD152215ADC0E00AFEB03 /* EVCAppProtoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		3BDFAF3E214348A900143AF2 /* EVCAppProto */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3BDFAF55214348AA00143AF2 /* Build configuration list for PBXNativeTarget "EVCAppProto" */;
@@ -180,10 +227,15 @@
 		3BDFAF37214348A900143AF2 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 1000;
 				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = Appamajigger;
 				TargetAttributes = {
 					3B0CD143215ADA4900AFEB03 = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = 3BDFAF3E214348A900143AF2;
+					};
+					3B0CD151215ADC0E00AFEB03 = {
 						CreatedOnToolsVersion = 10.0;
 						TestTargetID = 3BDFAF3E214348A900143AF2;
 					};
@@ -208,12 +260,20 @@
 			targets = (
 				3BDFAF3E214348A900143AF2 /* EVCAppProto */,
 				3B0CD143215ADA4900AFEB03 /* EVCAppProtoUnitTests */,
+				3B0CD151215ADC0E00AFEB03 /* EVCAppProtoUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		3B0CD142215ADA4900AFEB03 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B0CD150215ADC0E00AFEB03 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -242,6 +302,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3B0CD14E215ADC0E00AFEB03 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B0CD155215ADC0E00AFEB03 /* EVCAppProtoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3BDFAF3B214348A900143AF2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -262,6 +330,11 @@
 			isa = PBXTargetDependency;
 			target = 3BDFAF3E214348A900143AF2 /* EVCAppProto */;
 			targetProxy = 3B0CD149215ADA4900AFEB03 /* PBXContainerItemProxy */;
+		};
+		3B0CD158215ADC0E00AFEB03 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3BDFAF3E214348A900143AF2 /* EVCAppProto */;
+			targetProxy = 3B0CD157215ADC0E00AFEB03 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -334,6 +407,53 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EVCAppProto.app/EVCAppProto";
+			};
+			name = Release;
+		};
+		3B0CD15A215ADC0E00AFEB03 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NM9E6W7574;
+				INFOPLIST_FILE = EVCAppProtoUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.appamajigger.EVCAppProtoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = EVCAppProto;
+			};
+			name = Debug;
+		};
+		3B0CD15B215ADC0E00AFEB03 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NM9E6W7574;
+				INFOPLIST_FILE = EVCAppProtoUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.appamajigger.EVCAppProtoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = EVCAppProto;
 			};
 			name = Release;
 		};
@@ -493,6 +613,15 @@
 			buildConfigurations = (
 				3B0CD14B215ADA4900AFEB03 /* Debug */,
 				3B0CD14C215ADA4900AFEB03 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3B0CD159215ADC0E00AFEB03 /* Build configuration list for PBXNativeTarget "EVCAppProtoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B0CD15A215ADC0E00AFEB03 /* Debug */,
+				3B0CD15B215ADC0E00AFEB03 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
