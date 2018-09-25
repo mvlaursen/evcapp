@@ -7,15 +7,13 @@
 //
 
 #import "AppDelegate.h"
+#import "common.h"
 
 @interface AppDelegate ()
 
 @end
 
 @implementation AppDelegate
-
-// TODO: This should be defined only once in the codebase.
-static NSString *const kNumDocumentsReadKey = @"NumDocumentsRead";
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     NSArray *args = [[NSProcessInfo processInfo] arguments];

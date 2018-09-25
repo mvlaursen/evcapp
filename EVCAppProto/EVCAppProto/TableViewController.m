@@ -6,6 +6,7 @@
 //  Copyright © 2018 Appamajigger. All rights reserved.
 //
 
+#import "common.h"
 #import "DocumentCollection.h"
 #import <StoreKit/StoreKit.h>
 #import "TableViewCell.h"
@@ -18,8 +19,6 @@
 @end
 
 @implementation TableViewController
-
-static NSString *const kNumDocumentsReadKey = @"NumDocumentsRead";
 
 - (void)viewDidLoad {
     [super viewDidLoad];

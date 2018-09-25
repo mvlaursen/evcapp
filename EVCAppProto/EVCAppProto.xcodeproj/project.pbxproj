@@ -46,6 +46,7 @@
 		3B0CD152215ADC0E00AFEB03 /* EVCAppProtoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EVCAppProtoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B0CD154215ADC0E00AFEB03 /* EVCAppProtoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EVCAppProtoUITests.swift; sourceTree = "<group>"; };
 		3B0CD156215ADC0E00AFEB03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B0CD15C215AF8C700AFEB03 /* common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = common.h; sourceTree = "<group>"; };
 		3B5B99F52144520500F6D368 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		3B7A2F9721546A0D004C0A78 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		3BCBBDC72148C8CB00B80FBA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -145,6 +146,7 @@
 		3BDFAF41214348A900143AF2 /* EVCAppProto */ = {
 			isa = PBXGroup;
 			children = (
+				3B0CD15C215AF8C700AFEB03 /* common.h */,
 				3BDFAF42214348A900143AF2 /* AppDelegate.h */,
 				3BDFAF43214348A900143AF2 /* AppDelegate.m */,
 				3BDD19982144DCE8009E744A /* Document.h */,
