@@ -29,7 +29,7 @@ class EVCAppProtoUITests: XCTestCase {
     }
 
     func testOpenSite() {
-        // TODO: Make this test tolerant of case where prompt to rate app pops up.
+        // TODO: Fix problem where this test fails if locale is French Canadian.
         
         XCUIApplication().tables.staticTexts["Eurovan Rescue"].tap()
         
