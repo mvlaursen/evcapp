@@ -10,20 +10,8 @@
 
 @implementation DocumentCollection
 
-static NSArray *_links = nil;
 static NSArray *_manuals = nil;
-
-+ (NSArray *)links {
-    if (_links == nil) {
-        _links = [[NSArray alloc] init];
-        
-        NSBundle *bundle = [NSBundle bundleForClass:[self class]];
-        NSString *documentName = [bundle localizedStringForKey:@"EVCRescue" value:@"Eurovan Rescue" table:nil];
-        NSURL *url = [NSURL URLWithString:@"http://www.eurovanrescue.com"];
-        _links = [_links arrayByAddingObject:[[Document alloc] init:documentName withURL:url]];
-    }
-    return _links;
-}
+static NSArray *_sites = nil;
 
 + (NSArray *)manuals {
     if (_manuals == nil) {
@@ -47,6 +35,18 @@ static NSArray *_manuals = nil;
         _manuals = [_manuals arrayByAddingObject:[[Document alloc] init:documentName withURL:url]];
     }
     return _manuals;
+}
+
++ (NSArray *)sites {
+    if (_sites == nil) {
+        _sites = [[NSArray alloc] init];
+        
+        NSBundle *bundle = [NSBundle bundleForClass:[self class]];
+        NSString *documentName = [bundle localizedStringForKey:@"EVCRescue" value:@"Eurovan Rescue" table:nil];
+        NSURL *url = [NSURL URLWithString:@"http://www.eurovanrescue.com"];
+        _sites = [_sites arrayByAddingObject:[[Document alloc] init:documentName withURL:url]];
+    }
+    return _sites;
 }
 
 @end

@@ -14,12 +14,12 @@
  *  @discussion This property is a read-only singleton that is init'ed
  *      only once, so it can be accessed repeatedly with little overhead.
  */
-@property (class, readonly) NSArray *links;
+@property (class, readonly) NSArray *manuals;
 
 /**
  *  @discussion This property is a read-only singleton that is init'ed
  *      only once, so it can be accessed repeatedly with little overhead.
  */
-@property (class, readonly) NSArray *manuals;
+@property (class, readonly) NSArray *sites;
 
 @end
