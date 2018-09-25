@@ -45,20 +45,40 @@ static NSString *const kNumDocumentsReadKey = @"NumDocumentsRead";
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 1;
+    return 2;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    NSArray *documents = [DocumentCollection documents];
-    // TODO: Give the real number.
-    return documents.count;
+    if (section == 0) {
+        NSArray *links = [DocumentCollection links];
+        return links.count;
+    } else {
+        NSArray *manuals = [DocumentCollection manuals];
+        return manuals.count;
+    }
+}
+
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
+    NSBundle *bundle = [NSBundle bundleForClass:[self class]];
+
+    if (section == 0)
+        return [bundle localizedStringForKey:@"Section-Sites" value:@"Sites" table:nil];
+    else
+        return [bundle localizedStringForKey:@"Section-Manuals" value:@"Manuals" table:nil];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     TableViewCell *cell = (TableViewCell *) [tableView dequeueReusableCellWithIdentifier:@"Document Cell" forIndexPath:indexPath];
-    Document *document = (Document *) [[DocumentCollection documents] objectAtIndex:indexPath.row];
-    cell.documentName.text = document.name;
-    return cell;
+    
+    if (indexPath.section == 0) {
+        Document *link = (Document *) [[DocumentCollection links] objectAtIndex:indexPath.row];
+        cell.documentName.text = link.name;
+        return cell;
+    } else {
+        Document *manual = (Document *) [[DocumentCollection manuals] objectAtIndex:indexPath.row];
+        cell.documentName.text = manual.name;
+        return cell;
+    }
 }
 
 /*
@@ -106,14 +126,26 @@ static NSString *const kNumDocumentsReadKey = @"NumDocumentsRead";
 */
 
 - (void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    Document *document = [[DocumentCollection documents] objectAtIndex:indexPath.row];
-    SFSafariViewController *svc = [[SFSafariViewController alloc] initWithURL:document.url];
-    [self presentViewController:svc animated:YES completion:^{
-        NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-        NSInteger numDocumentsRead = [defaults integerForKey:kNumDocumentsReadKey];
-        numDocumentsRead++;
-        [defaults setInteger:numDocumentsRead forKey:kNumDocumentsReadKey];
-    }];
+    if (indexPath.section == 0) {
+        Document *link = [[DocumentCollection links] objectAtIndex:indexPath.row];
+        SFSafariViewController *svc = [[SFSafariViewController alloc] initWithURL:link.url];
+        [self presentViewController:svc animated:YES completion:^{
+            NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+            NSInteger numDocumentsRead = [defaults integerForKey:kNumDocumentsReadKey];
+            numDocumentsRead++;
+            [defaults setInteger:numDocumentsRead forKey:kNumDocumentsReadKey];
+        }];
+
+    } else {
+        Document *manual = [[DocumentCollection manuals] objectAtIndex:indexPath.row];
+        SFSafariViewController *svc = [[SFSafariViewController alloc] initWithURL:manual.url];
+        [self presentViewController:svc animated:YES completion:^{
+            NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+            NSInteger numDocumentsRead = [defaults integerForKey:kNumDocumentsReadKey];
+            numDocumentsRead++;
+            [defaults setInteger:numDocumentsRead forKey:kNumDocumentsReadKey];
+        }];
+    }
 }
 
 @end
