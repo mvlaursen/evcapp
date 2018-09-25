@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B0CD147215ADA4900AFEB03 /* EVCAppProtoUnitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B0CD146215ADA4900AFEB03 /* EVCAppProtoUnitTests.m */; };
 		3B7A2F9821546A0D004C0A78 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B7A2F9721546A0D004C0A78 /* StoreKit.framework */; };
 		3BCBBDC62148C8CB00B80FBA /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3BCBBDC82148C8CB00B80FBA /* Localizable.strings */; };
 		3BDD198F2144D0A3009E744A /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BDD198E2144D0A3009E744A /* TableViewController.m */; };
@@ -20,7 +21,20 @@
 		3BDFAF52214348AA00143AF2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BDFAF51214348AA00143AF2 /* main.m */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		3B0CD149215ADA4900AFEB03 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3BDFAF37214348A900143AF2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3BDFAF3E214348A900143AF2;
+			remoteInfo = EVCAppProto;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		3B0CD144215ADA4900AFEB03 /* EVCAppProtoUnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EVCAppProtoUnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B0CD146215ADA4900AFEB03 /* EVCAppProtoUnitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EVCAppProtoUnitTests.m; sourceTree = "<group>"; };
+		3B0CD148215ADA4900AFEB03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3B5B99F52144520500F6D368 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		3B7A2F9721546A0D004C0A78 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		3BCBBDC72148C8CB00B80FBA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -44,6 +58,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		3B0CD141215ADA4900AFEB03 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3BDFAF3C214348A900143AF2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -55,6 +76,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3B0CD145215ADA4900AFEB03 /* EVCAppProtoUnitTests */ = {
+			isa = PBXGroup;
+			children = (
+				3B0CD146215ADA4900AFEB03 /* EVCAppProtoUnitTests.m */,
+				3B0CD148215ADA4900AFEB03 /* Info.plist */,
+			);
+			path = EVCAppProtoUnitTests;
+			sourceTree = "<group>";
+		};
 		3B5B99F42144520500F6D368 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -68,6 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				3BDFAF41214348A900143AF2 /* EVCAppProto */,
+				3B0CD145215ADA4900AFEB03 /* EVCAppProtoUnitTests */,
 				3BDFAF40214348A900143AF2 /* Products */,
 				3B5B99F42144520500F6D368 /* Frameworks */,
 			);
@@ -77,6 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				3BDFAF3F214348A900143AF2 /* EVCAppProto.app */,
+				3B0CD144215ADA4900AFEB03 /* EVCAppProtoUnitTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -107,6 +139,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		3B0CD143215ADA4900AFEB03 /* EVCAppProtoUnitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3B0CD14D215ADA4900AFEB03 /* Build configuration list for PBXNativeTarget "EVCAppProtoUnitTests" */;
+			buildPhases = (
+				3B0CD140215ADA4900AFEB03 /* Sources */,
+				3B0CD141215ADA4900AFEB03 /* Frameworks */,
+				3B0CD142215ADA4900AFEB03 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3B0CD14A215ADA4900AFEB03 /* PBXTargetDependency */,
+			);
+			name = EVCAppProtoUnitTests;
+			productName = EVCAppProtoUnitTests;
+			productReference = 3B0CD144215ADA4900AFEB03 /* EVCAppProtoUnitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		3BDFAF3E214348A900143AF2 /* EVCAppProto */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3BDFAF55214348AA00143AF2 /* Build configuration list for PBXNativeTarget "EVCAppProto" */;
@@ -133,6 +183,10 @@
 				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = Appamajigger;
 				TargetAttributes = {
+					3B0CD143215ADA4900AFEB03 = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = 3BDFAF3E214348A900143AF2;
+					};
 					3BDFAF3E214348A900143AF2 = {
 						CreatedOnToolsVersion = 9.4.1;
 					};
@@ -153,11 +207,19 @@
 			projectRoot = "";
 			targets = (
 				3BDFAF3E214348A900143AF2 /* EVCAppProto */,
+				3B0CD143215ADA4900AFEB03 /* EVCAppProtoUnitTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		3B0CD142215ADA4900AFEB03 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3BDFAF3D214348A900143AF2 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -172,6 +234,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		3B0CD140215ADA4900AFEB03 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B0CD147215ADA4900AFEB03 /* EVCAppProtoUnitTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3BDFAF3B214348A900143AF2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -186,6 +256,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3B0CD14A215ADA4900AFEB03 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3BDFAF3E214348A900143AF2 /* EVCAppProto */;
+			targetProxy = 3B0CD149215ADA4900AFEB03 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		3BCBBDC82148C8CB00B80FBA /* Localizable.strings */ = {
@@ -216,6 +294,49 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		3B0CD14B215ADA4900AFEB03 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NM9E6W7574;
+				INFOPLIST_FILE = EVCAppProtoUnitTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.appamajigger.EVCAppProtoUnitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EVCAppProto.app/EVCAppProto";
+			};
+			name = Debug;
+		};
+		3B0CD14C215ADA4900AFEB03 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NM9E6W7574;
+				INFOPLIST_FILE = EVCAppProtoUnitTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.appamajigger.EVCAppProtoUnitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EVCAppProto.app/EVCAppProto";
+			};
+			name = Release;
+		};
 		3BDFAF53214348AA00143AF2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -367,6 +488,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		3B0CD14D215ADA4900AFEB03 /* Build configuration list for PBXNativeTarget "EVCAppProtoUnitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B0CD14B215ADA4900AFEB03 /* Debug */,
+				3B0CD14C215ADA4900AFEB03 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		3BDFAF3A214348A900143AF2 /* Build configuration list for PBXProject "EVCAppProto" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
