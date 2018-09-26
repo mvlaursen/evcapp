@@ -1,0 +1,591 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3B15AD0E215C4B2D00729DAA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B15AD0D215C4B2D00729DAA /* AppDelegate.swift */; };
+		3B15AD10215C4B2D00729DAA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B15AD0F215C4B2D00729DAA /* ViewController.swift */; };
+		3B15AD13215C4B2D00729DAA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B15AD11215C4B2D00729DAA /* Main.storyboard */; };
+		3B15AD15215C4B2E00729DAA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B15AD14215C4B2E00729DAA /* Assets.xcassets */; };
+		3B15AD18215C4B2E00729DAA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B15AD16215C4B2E00729DAA /* LaunchScreen.storyboard */; };
+		3B15AD23215C4B2E00729DAA /* EuroVan_Camper_HandbookTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B15AD22215C4B2E00729DAA /* EuroVan_Camper_HandbookTests.swift */; };
+		3B15AD2E215C4B2E00729DAA /* EuroVan_Camper_HandbookUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B15AD2D215C4B2E00729DAA /* EuroVan_Camper_HandbookUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3B15AD1F215C4B2E00729DAA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3B15AD02215C4B2D00729DAA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3B15AD09215C4B2D00729DAA;
+			remoteInfo = "EuroVan Camper Handbook";
+		};
+		3B15AD2A215C4B2E00729DAA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3B15AD02215C4B2D00729DAA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3B15AD09215C4B2D00729DAA;
+			remoteInfo = "EuroVan Camper Handbook";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3B15AD0A215C4B2D00729DAA /* EuroVan Camper Handbook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "EuroVan Camper Handbook.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B15AD0D215C4B2D00729DAA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3B15AD0F215C4B2D00729DAA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3B15AD12215C4B2D00729DAA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3B15AD14215C4B2E00729DAA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3B15AD17215C4B2E00729DAA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3B15AD19215C4B2E00729DAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B15AD1E215C4B2E00729DAA /* EuroVan Camper HandbookTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "EuroVan Camper HandbookTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B15AD22215C4B2E00729DAA /* EuroVan_Camper_HandbookTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EuroVan_Camper_HandbookTests.swift; sourceTree = "<group>"; };
+		3B15AD24215C4B2E00729DAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B15AD29215C4B2E00729DAA /* EuroVan Camper HandbookUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "EuroVan Camper HandbookUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B15AD2D215C4B2E00729DAA /* EuroVan_Camper_HandbookUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EuroVan_Camper_HandbookUITests.swift; sourceTree = "<group>"; };
+		3B15AD2F215C4B2E00729DAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3B15AD07215C4B2D00729DAA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B15AD1B215C4B2E00729DAA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B15AD26215C4B2E00729DAA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3B15AD01215C4B2D00729DAA = {
+			isa = PBXGroup;
+			children = (
+				3B15AD0C215C4B2D00729DAA /* EuroVan Camper Handbook */,
+				3B15AD21215C4B2E00729DAA /* EuroVan Camper HandbookTests */,
+				3B15AD2C215C4B2E00729DAA /* EuroVan Camper HandbookUITests */,
+				3B15AD0B215C4B2D00729DAA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3B15AD0B215C4B2D00729DAA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3B15AD0A215C4B2D00729DAA /* EuroVan Camper Handbook.app */,
+				3B15AD1E215C4B2E00729DAA /* EuroVan Camper HandbookTests.xctest */,
+				3B15AD29215C4B2E00729DAA /* EuroVan Camper HandbookUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3B15AD0C215C4B2D00729DAA /* EuroVan Camper Handbook */ = {
+			isa = PBXGroup;
+			children = (
+				3B15AD0D215C4B2D00729DAA /* AppDelegate.swift */,
+				3B15AD0F215C4B2D00729DAA /* ViewController.swift */,
+				3B15AD11215C4B2D00729DAA /* Main.storyboard */,
+				3B15AD14215C4B2E00729DAA /* Assets.xcassets */,
+				3B15AD16215C4B2E00729DAA /* LaunchScreen.storyboard */,
+				3B15AD19215C4B2E00729DAA /* Info.plist */,
+			);
+			path = "EuroVan Camper Handbook";
+			sourceTree = "<group>";
+		};
+		3B15AD21215C4B2E00729DAA /* EuroVan Camper HandbookTests */ = {
+			isa = PBXGroup;
+			children = (
+				3B15AD22215C4B2E00729DAA /* EuroVan_Camper_HandbookTests.swift */,
+				3B15AD24215C4B2E00729DAA /* Info.plist */,
+			);
+			path = "EuroVan Camper HandbookTests";
+			sourceTree = "<group>";
+		};
+		3B15AD2C215C4B2E00729DAA /* EuroVan Camper HandbookUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3B15AD2D215C4B2E00729DAA /* EuroVan_Camper_HandbookUITests.swift */,
+				3B15AD2F215C4B2E00729DAA /* Info.plist */,
+			);
+			path = "EuroVan Camper HandbookUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3B15AD09215C4B2D00729DAA /* EuroVan Camper Handbook */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3B15AD32215C4B2E00729DAA /* Build configuration list for PBXNativeTarget "EuroVan Camper Handbook" */;
+			buildPhases = (
+				3B15AD06215C4B2D00729DAA /* Sources */,
+				3B15AD07215C4B2D00729DAA /* Frameworks */,
+				3B15AD08215C4B2D00729DAA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "EuroVan Camper Handbook";
+			productName = "EuroVan Camper Handbook";
+			productReference = 3B15AD0A215C4B2D00729DAA /* EuroVan Camper Handbook.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3B15AD1D215C4B2E00729DAA /* EuroVan Camper HandbookTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3B15AD35215C4B2E00729DAA /* Build configuration list for PBXNativeTarget "EuroVan Camper HandbookTests" */;
+			buildPhases = (
+				3B15AD1A215C4B2E00729DAA /* Sources */,
+				3B15AD1B215C4B2E00729DAA /* Frameworks */,
+				3B15AD1C215C4B2E00729DAA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3B15AD20215C4B2E00729DAA /* PBXTargetDependency */,
+			);
+			name = "EuroVan Camper HandbookTests";
+			productName = "EuroVan Camper HandbookTests";
+			productReference = 3B15AD1E215C4B2E00729DAA /* EuroVan Camper HandbookTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3B15AD28215C4B2E00729DAA /* EuroVan Camper HandbookUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3B15AD38215C4B2E00729DAA /* Build configuration list for PBXNativeTarget "EuroVan Camper HandbookUITests" */;
+			buildPhases = (
+				3B15AD25215C4B2E00729DAA /* Sources */,
+				3B15AD26215C4B2E00729DAA /* Frameworks */,
+				3B15AD27215C4B2E00729DAA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3B15AD2B215C4B2E00729DAA /* PBXTargetDependency */,
+			);
+			name = "EuroVan Camper HandbookUITests";
+			productName = "EuroVan Camper HandbookUITests";
+			productReference = 3B15AD29215C4B2E00729DAA /* EuroVan Camper HandbookUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3B15AD02215C4B2D00729DAA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = Appamajigger;
+				TargetAttributes = {
+					3B15AD09215C4B2D00729DAA = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					3B15AD1D215C4B2E00729DAA = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = 3B15AD09215C4B2D00729DAA;
+					};
+					3B15AD28215C4B2E00729DAA = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = 3B15AD09215C4B2D00729DAA;
+					};
+				};
+			};
+			buildConfigurationList = 3B15AD05215C4B2D00729DAA /* Build configuration list for PBXProject "EuroVan Camper Handbook" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3B15AD01215C4B2D00729DAA;
+			productRefGroup = 3B15AD0B215C4B2D00729DAA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3B15AD09215C4B2D00729DAA /* EuroVan Camper Handbook */,
+				3B15AD1D215C4B2E00729DAA /* EuroVan Camper HandbookTests */,
+				3B15AD28215C4B2E00729DAA /* EuroVan Camper HandbookUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3B15AD08215C4B2D00729DAA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B15AD18215C4B2E00729DAA /* LaunchScreen.storyboard in Resources */,
+				3B15AD15215C4B2E00729DAA /* Assets.xcassets in Resources */,
+				3B15AD13215C4B2D00729DAA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B15AD1C215C4B2E00729DAA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B15AD27215C4B2E00729DAA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3B15AD06215C4B2D00729DAA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B15AD10215C4B2D00729DAA /* ViewController.swift in Sources */,
+				3B15AD0E215C4B2D00729DAA /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B15AD1A215C4B2E00729DAA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B15AD23215C4B2E00729DAA /* EuroVan_Camper_HandbookTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B15AD25215C4B2E00729DAA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B15AD2E215C4B2E00729DAA /* EuroVan_Camper_HandbookUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3B15AD20215C4B2E00729DAA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3B15AD09215C4B2D00729DAA /* EuroVan Camper Handbook */;
+			targetProxy = 3B15AD1F215C4B2E00729DAA /* PBXContainerItemProxy */;
+		};
+		3B15AD2B215C4B2E00729DAA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3B15AD09215C4B2D00729DAA /* EuroVan Camper Handbook */;
+			targetProxy = 3B15AD2A215C4B2E00729DAA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3B15AD11215C4B2D00729DAA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3B15AD12215C4B2D00729DAA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3B15AD16215C4B2E00729DAA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3B15AD17215C4B2E00729DAA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3B15AD30215C4B2E00729DAA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3B15AD31215C4B2E00729DAA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3B15AD33215C4B2E00729DAA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NM9E6W7574;
+				INFOPLIST_FILE = "EuroVan Camper Handbook/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.appamajigger.EuroVan-Camper-Handbook";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3B15AD34215C4B2E00729DAA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NM9E6W7574;
+				INFOPLIST_FILE = "EuroVan Camper Handbook/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.appamajigger.EuroVan-Camper-Handbook";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3B15AD36215C4B2E00729DAA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NM9E6W7574;
+				INFOPLIST_FILE = "EuroVan Camper HandbookTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.appamajigger.EuroVan-Camper-HandbookTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EuroVan Camper Handbook.app/EuroVan Camper Handbook";
+			};
+			name = Debug;
+		};
+		3B15AD37215C4B2E00729DAA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NM9E6W7574;
+				INFOPLIST_FILE = "EuroVan Camper HandbookTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.appamajigger.EuroVan-Camper-HandbookTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EuroVan Camper Handbook.app/EuroVan Camper Handbook";
+			};
+			name = Release;
+		};
+		3B15AD39215C4B2E00729DAA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NM9E6W7574;
+				INFOPLIST_FILE = "EuroVan Camper HandbookUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.appamajigger.EuroVan-Camper-HandbookUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "EuroVan Camper Handbook";
+			};
+			name = Debug;
+		};
+		3B15AD3A215C4B2E00729DAA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NM9E6W7574;
+				INFOPLIST_FILE = "EuroVan Camper HandbookUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.appamajigger.EuroVan-Camper-HandbookUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "EuroVan Camper Handbook";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3B15AD05215C4B2D00729DAA /* Build configuration list for PBXProject "EuroVan Camper Handbook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B15AD30215C4B2E00729DAA /* Debug */,
+				3B15AD31215C4B2E00729DAA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3B15AD32215C4B2E00729DAA /* Build configuration list for PBXNativeTarget "EuroVan Camper Handbook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B15AD33215C4B2E00729DAA /* Debug */,
+				3B15AD34215C4B2E00729DAA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3B15AD35215C4B2E00729DAA /* Build configuration list for PBXNativeTarget "EuroVan Camper HandbookTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B15AD36215C4B2E00729DAA /* Debug */,
+				3B15AD37215C4B2E00729DAA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3B15AD38215C4B2E00729DAA /* Build configuration list for PBXNativeTarget "EuroVan Camper HandbookUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B15AD39215C4B2E00729DAA /* Debug */,
+				3B15AD3A215C4B2E00729DAA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3B15AD02215C4B2D00729DAA /* Project object */;
+}
