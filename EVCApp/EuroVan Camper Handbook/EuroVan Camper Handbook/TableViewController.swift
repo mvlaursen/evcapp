@@ -21,8 +21,7 @@ class TableViewController: UITableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
         
-        // TODO Declare NumDocumentsRead as a static const somewhere.
-        let numDocumentsRead = UserDefaults.standard.integer(forKey: "NumDocumentsRead")
+        let numDocumentsRead = UserDefaults.standard.integer(forKey: Common.numDocumentsRead)
         if numDocumentsRead >= 10 {
             SKStoreReviewController.requestReview()
         }
@@ -118,8 +117,8 @@ class TableViewController: UITableViewController {
         
         let safariVC = SFSafariViewController.init(url: url)
         self.present(safariVC, animated: true) {
-            let numDocumentsRead = UserDefaults.standard.integer(forKey: "NumDocumentsRead")
-            UserDefaults.standard.set(numDocumentsRead + 1, forKey: "NumDocumentsRead")
+            let numDocumentsRead = UserDefaults.standard.integer(forKey: Common.numDocumentsRead)
+            UserDefaults.standard.set(numDocumentsRead + 1, forKey: Common.numDocumentsRead)
         }
     }
 }

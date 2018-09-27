@@ -19,6 +19,7 @@
 		3B1A4663215C84D200CFF05D /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1A4662215C84D200CFF05D /* TableViewCell.swift */; };
 		3B1A4665215C84EE00CFF05D /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1A4664215C84EE00CFF05D /* TableViewController.swift */; };
 		3B755E53215D924100EB70C1 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B755E52215D924100EB70C1 /* StoreKit.framework */; };
+		3B755E55215D958C00EB70C1 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B755E54215D958C00EB70C1 /* Common.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		3B1A4662215C84D200CFF05D /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		3B1A4664215C84EE00CFF05D /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		3B755E52215D924100EB70C1 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		3B755E54215D958C00EB70C1 /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +113,7 @@
 		3B15AD0C215C4B2D00729DAA /* EuroVan Camper Handbook */ = {
 			isa = PBXGroup;
 			children = (
+				3B755E54215D958C00EB70C1 /* Common.swift */,
 				3B1A465E215C781800CFF05D /* Reference.swift */,
 				3B1A4660215C7AFA00CFF05D /* ReferenceCollection.swift */,
 				3B15AD0D215C4B2D00729DAA /* AppDelegate.swift */,
@@ -288,6 +291,7 @@
 				3B1A4663215C84D200CFF05D /* TableViewCell.swift in Sources */,
 				3B15AD0E215C4B2D00729DAA /* AppDelegate.swift in Sources */,
 				3B1A4665215C84EE00CFF05D /* TableViewController.swift in Sources */,
+				3B755E55215D958C00EB70C1 /* Common.swift in Sources */,
 				3B1A4661215C7AFA00CFF05D /* ReferenceCollection.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
