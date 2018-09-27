@@ -102,8 +102,15 @@ class TableViewController: UITableViewController {
     */
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let safariVC = SFSafariViewController.init(url: URL(string: "http://yahoo.com")!)
+        var url: URL
+        
+        if indexPath.section == 0 {
+            url = ReferenceCollection.shared.manuals[indexPath.row].url
+        } else {
+            url = ReferenceCollection.shared.sites[indexPath.row].url
+        }
+        
+        let safariVC = SFSafariViewController.init(url: url)
         self.present(safariVC, animated: true, completion: nil)
     }
-
 }
