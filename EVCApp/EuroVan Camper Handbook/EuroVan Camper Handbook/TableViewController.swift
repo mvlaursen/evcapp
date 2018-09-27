@@ -7,6 +7,7 @@
 //
 
 import SafariServices
+import StoreKit
 import UIKit
 
 class TableViewController: UITableViewController {
@@ -19,6 +20,12 @@ class TableViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        
+        // TODO Declare NumDocumentsRead as a static const somewhere.
+        let numDocumentsRead = UserDefaults.standard.integer(forKey: "NumDocumentsRead")
+        if numDocumentsRead >= 10 {
+            SKStoreReviewController.requestReview()
+        }
     }
 
     // MARK: - Table view data source
@@ -110,6 +117,9 @@ class TableViewController: UITableViewController {
         }
         
         let safariVC = SFSafariViewController.init(url: url)
-        self.present(safariVC, animated: true, completion: nil)
+        self.present(safariVC, animated: true) {
+            let numDocumentsRead = UserDefaults.standard.integer(forKey: "NumDocumentsRead")
+            UserDefaults.standard.set(numDocumentsRead + 1, forKey: "NumDocumentsRead")
+        }
     }
 }

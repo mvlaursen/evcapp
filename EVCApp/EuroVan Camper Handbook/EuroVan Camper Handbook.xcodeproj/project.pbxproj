@@ -18,6 +18,7 @@
 		3B1A4661215C7AFA00CFF05D /* ReferenceCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1A4660215C7AFA00CFF05D /* ReferenceCollection.swift */; };
 		3B1A4663215C84D200CFF05D /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1A4662215C84D200CFF05D /* TableViewCell.swift */; };
 		3B1A4665215C84EE00CFF05D /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1A4664215C84EE00CFF05D /* TableViewController.swift */; };
+		3B755E53215D924100EB70C1 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B755E52215D924100EB70C1 /* StoreKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		3B1A4660215C7AFA00CFF05D /* ReferenceCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReferenceCollection.swift; sourceTree = "<group>"; };
 		3B1A4662215C84D200CFF05D /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		3B1A4664215C84EE00CFF05D /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		3B755E52215D924100EB70C1 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B755E53215D924100EB70C1 /* StoreKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,6 +94,7 @@
 				3B15AD21215C4B2E00729DAA /* EuroVan Camper HandbookTests */,
 				3B15AD2C215C4B2E00729DAA /* EuroVan Camper HandbookUITests */,
 				3B15AD0B215C4B2D00729DAA /* Products */,
+				3B755E51215D924100EB70C1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -137,6 +141,14 @@
 				3B15AD2F215C4B2E00729DAA /* Info.plist */,
 			);
 			path = "EuroVan Camper HandbookUITests";
+			sourceTree = "<group>";
+		};
+		3B755E51215D924100EB70C1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3B755E52215D924100EB70C1 /* StoreKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
