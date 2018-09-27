@@ -20,9 +20,8 @@ class EuroVan_Camper_HandbookTests: XCTestCase {
     }
     
     func testValidateReferenceCollection() {
-        let referenceCollection = ReferenceCollection()
-        XCTAssert(referenceCollection.manuals.count == 4)
-        XCTAssert(referenceCollection.sites.count == 1)
+        XCTAssert(ReferenceCollection.shared.manuals.count == 4)
+        XCTAssert(ReferenceCollection.shared.sites.count == 1)
         // TODO: Test in more detail.
     }
 

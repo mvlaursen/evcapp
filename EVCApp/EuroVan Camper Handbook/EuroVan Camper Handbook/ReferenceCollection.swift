@@ -9,10 +9,12 @@
 import Foundation
 
 struct ReferenceCollection {
+    static let shared = ReferenceCollection()
+    
     let manuals: Array<Reference>
     let sites: Array<Reference>
     
-    init() {
+    private init() {
         // TODO Use the localized reference names.
         
         var manuals = Array<Reference>()
