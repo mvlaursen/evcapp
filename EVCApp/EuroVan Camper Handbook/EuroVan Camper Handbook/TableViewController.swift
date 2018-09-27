@@ -6,6 +6,7 @@
 //  Copyright © 2018 Appamajigger. All rights reserved.
 //
 
+import SafariServices
 import UIKit
 
 class TableViewController: UITableViewController {
@@ -99,5 +100,10 @@ class TableViewController: UITableViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let safariVC = SFSafariViewController.init(url: URL(string: "http://yahoo.com")!)
+        self.present(safariVC, animated: true, completion: nil)
+    }
 
 }
