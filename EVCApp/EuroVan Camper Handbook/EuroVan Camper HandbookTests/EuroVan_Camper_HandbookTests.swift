@@ -18,10 +18,12 @@ class EuroVan_Camper_HandbookTests: XCTestCase {
     override func tearDown() {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
-
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    
+    func testValidateReferenceCollection() {
+        let referenceCollection = ReferenceCollection()
+        XCTAssert(referenceCollection.manuals.count == 4)
+        XCTAssert(referenceCollection.sites.count == 1)
+        // TODO: Test in more detail.
     }
 
     func testPerformanceExample() {
