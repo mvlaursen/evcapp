@@ -28,11 +28,10 @@ class TableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        // TODO: Use the localized header titles.
         if section == 0 {
-            return "Manuals"
+            return NSLocalizedString("Section-Manuals", value: "Manuals", comment: "")
         } else {
-            return "Sites"
+            return NSLocalizedString("Section-Sites", value: "Sites", comment: "")
         }
     }
     
