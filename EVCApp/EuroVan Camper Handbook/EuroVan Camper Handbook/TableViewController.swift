@@ -23,24 +23,37 @@ class TableViewController: UITableViewController {
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 2
     }
-
+    
+    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        // TODO: Use the localized header titles.
+        if section == 0 {
+            return "Manuals"
+        } else {
+            return "Sites"
+        }
+    }
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
+        if section == 0 {
+            return ReferenceCollection.shared.manuals.count
+        } else {
+            return ReferenceCollection.shared.sites.count
+        }
     }
 
-    /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
-        // Configure the cell...
-
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Reference Cell", for: indexPath) as! TableViewCell
+        
+        if indexPath.section == 0 {
+            cell.referenceName.text = ReferenceCollection.shared.manuals[indexPath.row].name
+        } else {
+            cell.referenceName.text = ReferenceCollection.shared.sites[indexPath.row].name
+        }
+        
         return cell
     }
-    */
 
     /*
     // Override to support conditional editing of the table view.
