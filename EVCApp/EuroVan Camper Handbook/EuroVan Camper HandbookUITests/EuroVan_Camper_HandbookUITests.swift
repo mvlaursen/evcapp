@@ -17,7 +17,9 @@ class EuroVan_Camper_HandbookUITests: XCTestCase {
         continueAfterFailure = false
 
         // UI tests must launch the application that they test. Doing this in setup will make sure it happens for each test method.
-        XCUIApplication().launch()
+        let application = XCUIApplication()
+        application.launchArguments.append("isTestMode")
+        application.launch()
 
         // In UI tests it’s important to set the initial state - such as interface orientation - required for your tests before they run. The setUp method is a good place to do this.
     }
@@ -27,8 +29,12 @@ class EuroVan_Camper_HandbookUITests: XCTestCase {
     }
 
     func testExample() {
-        // Use recording to get started writing UI tests.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+        // TODO: Fix problem where this test fails if locale is French Canadian.
+        
+        XCUIApplication().tables.staticTexts["Eurovan Rescue"].tap()
+        
+        expectation(for: NSPredicate(format: "exists == true"), evaluatedWith: XCUIApplication().buttons["Done"], handler: nil)
+        waitForExpectations(timeout: 10, handler: nil)
+        XCUIApplication().buttons["Done"].tap()
     }
-
 }
