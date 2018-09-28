@@ -21,8 +21,12 @@ class EuroVan_Camper_HandbookTests: XCTestCase {
     
     func testValidateReferenceCollection() {
         XCTAssert(ReferenceCollection.shared.manuals.count == 4)
+        XCTAssert(ReferenceCollection.shared.manuals[0].name == "1995 EuroVan Camper")
+        XCTAssert(ReferenceCollection.shared.manuals[1].name == "1995 EuroVan Camper (Canadian)")
+        XCTAssert(ReferenceCollection.shared.manuals[2].name == "1997 EuroVan Camper")
+        XCTAssert(ReferenceCollection.shared.manuals[3].name == "2002 EuroVan Camper")
         XCTAssert(ReferenceCollection.shared.sites.count == 1)
-        // TODO: Test in more detail.
+        XCTAssert(ReferenceCollection.shared.sites[0].name == "Eurovan Rescue")
     }
 
     func testPerformanceExample() {
