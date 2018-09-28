@@ -39,6 +39,11 @@
                BlueprintName = "EuroVan Camper HandbookTests"
                ReferencedContainer = "container:EuroVan Camper Handbook.xcodeproj">
             </BuildableReference>
+            <SkippedTests>
+               <Test
+                  Identifier = "EuroVan_Camper_HandbookTests/testPerformanceExample()">
+               </Test>
+            </SkippedTests>
          </TestableReference>
          <TestableReference
             skipped = "NO">
