@@ -42,6 +42,16 @@ class EuroVan_Camper_HandbookTests: XCTestCase {
         XCTAssert(ReferenceCollection.shared.sites[0].url.absoluteString == "http://www.eurovanrescue.com")
     }
 
+    func testValidateReferenceCollectionfrCA() {
+        XCTAssert(ReferenceCollection.shared.manuals.count == 4)
+        XCTAssert(ReferenceCollection.shared.manuals[0].name == "1995 EuroVan Camper")
+        XCTAssert(ReferenceCollection.shared.manuals[1].name == "1995 EuroVan Camper (Canadienne)")
+        XCTAssert(ReferenceCollection.shared.manuals[2].name == "1997 EuroVan Camper")
+        XCTAssert(ReferenceCollection.shared.manuals[3].name == "2002 EuroVan Camper")
+        XCTAssert(ReferenceCollection.shared.sites.count == 1)
+        XCTAssert(ReferenceCollection.shared.sites[0].name == "Eurovan Rescue")
+    }
+    
     func testPerformanceExample() {
         // This is an example of a performance test case.
         self.measure {

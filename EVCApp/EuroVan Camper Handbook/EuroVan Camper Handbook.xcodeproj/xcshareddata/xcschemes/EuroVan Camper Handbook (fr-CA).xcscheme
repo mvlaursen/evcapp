@@ -26,8 +26,8 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      language = "en"
-      region = "US"
+      language = "fr"
+      region = "CA"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
          <TestableReference
@@ -44,7 +44,7 @@
                   Identifier = "EuroVan_Camper_HandbookTests/testPerformanceExample()">
                </Test>
                <Test
-                  Identifier = "EuroVan_Camper_HandbookTests/testValidateReferenceCollectionfrCA()">
+                  Identifier = "EuroVan_Camper_HandbookTests/testValidateReferenceCollection()">
                </Test>
             </SkippedTests>
          </TestableReference>
@@ -57,6 +57,11 @@
                BlueprintName = "EuroVan Camper HandbookUITests"
                ReferencedContainer = "container:EuroVan Camper Handbook.xcodeproj">
             </BuildableReference>
+            <SkippedTests>
+               <Test
+                  Identifier = "EuroVan_Camper_HandbookUITests">
+               </Test>
+            </SkippedTests>
          </TestableReference>
       </Testables>
       <MacroExpansion>
